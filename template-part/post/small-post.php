@@ -7,7 +7,7 @@
                 <h2><?php the_title(); ?></h2>
 
                 <p>
-                    <strong><?php the_author(); ?></strong><br/>
+                    <strong><?php the_author_posts_link(); ?></strong><br/>
                     <?php $assone_date=get_the_date('jS F, Y');
                         echo esc_html($assone_date);
                     ?>

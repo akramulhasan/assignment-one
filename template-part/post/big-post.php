@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="post-title"><?php the_title(); ?></h2>
+                <a href="<?php the_permalink(); ?>"><h2 class="post-title"><?php the_title(); ?></h2></a>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <p>
-                    <strong><?php the_author(); ?></strong><br/>
+                    <strong><?php the_author_posts_link(); ?></strong><br/>
                     <?php $assone_date=get_the_date('jS F, Y');
                         echo esc_html($assone_date);
                     ?>
